@@ -2,30 +2,98 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xique-Xique - Bahia</title>
-     <style>
-    body{
-        background-color: rgb(218, 172, 255);
-        font-family: Arial, Helvetica, sans-serif;
-        button{
-            background-color: rgb(39, 8, 68);
+    <style>
+        body {
+            background-color: #fdf5e6; /* Tom de areia claro */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #4a3321; /* Marrom escuro para o texto */
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #d2691e; /* Tom de terra/laranja */
+            text-align: center;
+            border-bottom: 3px solid #4682b4; /* Azul lembrando o Rio São Francisco */
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: #8b4513; /* Marrom couro */
+            margin-top: 30px;
+            border-left: 5px solid #d2691e;
+            padding-left: 10px;
+        }
+
+        h3 {
+            color: #4682b4; /* Azul Rio */
+        }
+
+        /* Ajuste das Imagens */
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            width: 500px; /* Tamanho padrão para a imagem principal */
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+            border: 4px solid #fff;
+        }
+
+        /* Listas personalizadas */
+        ul, ol {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Botão com estilo "Sertão Chic" */
+        button {
+            background-color: #4682b4; /* Azul */
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 15px 30px;
             text-align: center;
             text-decoration: none;
-            font-size: 16px;
-            margin: 4px 2px;
+            display: block;
+            font-size: 18px;
+            margin: 30px auto;
             cursor: pointer;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background 0.3s;
         }
-    }
-  </style>
+
+        button:hover {
+            background-color: #d2691e; /* Muda para terra no hover */
+        }
+
+        /* Links */
+        a {
+            text-decoration: none;
+        }
+
+        /* Destaques no texto */
+        strong {
+            color: #d2691e;
+        }
+    </style>
 </head>
 <body>
 
     <h1>Xique-Xique, Bahia</h1>
-    <p>Bem-vindo à página informativa sobre uma das cidades mais emblemáticas do sertão baiano!</p>
+    <p style="text-align: center; font-style: italic;">Bem-vindo à página informativa sobre uma das cidades mais emblemáticas do sertão baiano!</p>
 
+    <img src="../xique/xique.jpg" alt="Vista de Xique-Xique">
 
     <h2>Sobre a Cidade (História)</h2>
     <p>
@@ -42,26 +110,33 @@
     </ul>
 
     <h2>Informações Gerais</h2>
-    <h3>Cidades Próximas</h3>
-    <ol>
-        <li>Itaguaçu da Bahia</li>
-        <li>Barra</li>
-        <li>Gentio do Ouro</li>
-    </ol>
+    
+    <div style="display: flex; gap: 20px;">
+        <div style="flex: 1; min-width: 250px;">
+            <h3>Cidades Próximas</h3>
+            <ol>
+                <li>Itaguaçu da Bahia</li>
+                <li>Barra</li>
+                <li>Gentio do Ouro</li>
+            </ol>
+        </div>
 
-    <h3>Comidas Regionais</h3>
-    <ul>
-        <li>Surubim na brasa (peixe do rio)</li>
-        <li>Carne de sol com pirão</li>
-        <li>Frutos nativos do cerrado</li>
-    </ul>
+        <div style="flex: 1; min-width: 250px;">
+            <h3>Comidas Regionais</h3>
+            <ul>
+                <li>Surubim na brasa (peixe do rio)</li>
+                <li>Carne de sol com pirão</li>
+                <li>Frutos nativos do cerrado</li>
+            </ul>
+        </div>
+    </div>
 
     <h3>Cultura e Músicas</h3>
     <p>A cidade respira o forró pé-de-serra e as festas religiosas, como a de <em>Senhor do Bonfim</em>.</p>
 
-
-    <h2>Saiba mais</h2>
-    <p>Visite o site oficial da <a href="https://www.xiquexique.ba.gov.br/" target="_blank">Prefeitura de Xique-Xique</a>.</p>
+    <a href="https://www.xiquexique.ba.gov.br/" target="_blank">
+        <button>Conheça o Site da Prefeitura</button>
+    </a>
 
 </body>
 </html>
