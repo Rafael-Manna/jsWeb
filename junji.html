@@ -17,7 +17,27 @@
     flex-direction: column; /* Faz os elementos ficarem um abaixo do outro */
 }
         
+        audio {
+    display: block;
+    width: 300px; /* Largura fixa para combinar com suas imagens */
 
+    
+    /* Filtros para mudar a vibe do player cinza padrão */
+    filter: invert(100%) hue-rotate(180deg) brightness(1.2); 
+    
+    /* Inverter as cores faz o player ficar escuro e os ícones brancos.
+       O hue-rotate pode ser ajustado para dar um tom levemente avermelhado. */
+    
+    opacity: 0.1;
+    transition: opacity 0.3s;
+    box-shadow: 0px 0px 10px #5d0707; /* Brilho vermelho ao redor */
+    border-radius: 50px;
+}
+
+audio:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 20px #d11212; /* Aumenta o brilho no hover */
+}
         /* Estilo para os parágrafos */
         p {
             margin-bottom: 15px;
@@ -109,7 +129,11 @@
     </style>
 </head>
 <body>
-    <p style="text-align: center;">Wiki Perfil!</p>
+         <div style="display: flex; gap: 20px;">
+                <p style="text-align: center;">Wiki Perfil!</p>
+                 <audio src="../musicas/creep.mp3" controls></audio>
+  </div>
+  
     <h1>Junji Ito (伊藤 潤二)</h1>
     <h2>Quem é?</h2>
     <img src="../imagens/junji.jpg" alt="Junji Ito">
